@@ -1,0 +1,523 @@
+  @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Poppins, sans-serif;
+      scroll-behavior: smooth;
+  }
+  
+  body {
+      background: #02203b;
+      margin-left: var(--width-collapsed);
+      padding: 0;
+      overflow-x: hidden;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: fantasy;
+  }
+  
+  section::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100px;
+      background: linear-gradient(to top, #02203b, transparent);
+      z-index: 1000;
+  }
+  /*Work*/
+  
+  h2 {
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 2em;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+  }
+  
+  #work {
+      align-items: center;
+      display: grid;
+      justify-content: center;
+  }
+  
+  #FotoWork {
+      border-radius: 16px;
+      width: 100vh;
+      height: 100%;
+      box-shadow: 0px 0px 40px 4px #2f60ff;
+  }
+  
+  #table {
+      box-shadow: 0px 0px 40px 4px #2f60ff;
+      width: 100vh;
+      border-radius: 16px;
+      background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b)
+  }
+  
+  #table:hover {
+      transition-delay: 0.4s;
+      transform: translateY(-15px);
+      box-shadow: 0px 0px 40px 4px #ebeef1;
+      transition: 0.5s linear;
+      width: 100vh;
+      border-radius: 16px;
+      background: linear-gradient(0deg, #2f60ff, #2f60ff, #2f60ff)
+  }
+  /*skills*/
+  
+  .imgskills {
+      box-shadow: 0px 0px 40px 4px #2f60ff;
+      width: 50%;
+      align-self: center;
+      border-radius: 90px;
+  }
+  
+  .itemskills {
+      position: relative;
+      justify-content: flex-end;
+      display: flex;
+      align-items: center;
+      min-height: 100vh;
+      margin-left: var(--width-collapsed);
+  }
+  
+  .skills {
+      background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b);
+      position: relative;
+      width: 600px;
+      border-radius: 16px;
+      overflow: hidden;
+      transition: 0.5s linear;
+      text-align: center;
+  }
+  
+  .skill {
+      position: relative;
+      margin: 40px;
+  }
+  
+  .skill-name {
+      color: #b1b1a9;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: 700;
+  }
+  
+  .skill-bar {
+      position: relative;
+      width: 85%;
+      height: 4px;
+      background: #b1b1a9;
+      border-radius: 4px;
+  }
+  
+  .progressone,
+  .progresstwo,
+  .progressthree,
+  .progressfour,
+  .progressfive,
+  .progressE,
+  .progressP,
+  .progressES {
+      height: 4px;
+      border-radius: 4px;
+  }
+  
+  .progressone {
+      background: #ff2f74;
+      box-shadow: 0px 0px 40px 4px #ff2f74;
+      width: 0%;
+      transition: 0.5s;
+  }
+  
+  .progresstwo {
+      background: #2f60ff;
+      box-shadow: 0px 0px 40px 4px #2f60ff;
+      width: 0%;
+      transition: 0.6s;
+  }
+  
+  .progressthree {
+      background: #fff606;
+      box-shadow: 0px 0px 40px 4px #fff606;
+      width: 0%;
+      transition: 0.7s;
+  }
+  
+  .progressfour {
+      background: #2fff39;
+      box-shadow: 0px 0px 40px 4px #2fff39;
+      width: 0%;
+      transition: 0.8s;
+  }
+  
+  .progressfive {
+      background: #0fcefd;
+      box-shadow: 0px 0px 40px 4px #0fcefd;
+      width: 0%;
+      transition: 0.9s;
+  }
+  
+  .progressE {
+      background: #ff2f74;
+      box-shadow: 0px 0px 40px 4px #ff2f74;
+      width: 0%;
+      transition: 0.5s;
+  }
+  
+  .progressP {
+      background: #2fff39;
+      box-shadow: 0px 0px 40px 4px #2fff39;
+      width: 0%;
+      transition: 0.8s;
+  }
+  
+  .progressES {
+      background: #2f60ff;
+      box-shadow: 0px 0px 40px 4px #2f60ff;
+      width: 0%;
+      transition: 0.6s;
+  }
+  
+  .percentone,
+  .percenttwo,
+  .percentthree,
+  .percentfour,
+  .percentfive {
+      position: absolute;
+      width: 45px;
+      height: 45px;
+      border: 2px solid red;
+      border-radius: 50px;
+      padding: 5px;
+      color: #b1b1a9;
+      top: -20px;
+      right: -55px;
+      transition: 0.4s linear;
+      line-height: 30px;
+  }
+  
+  .percentone {
+      border: 3px solid #ff2f74;
+  }
+  
+  .percenttwo {
+      border: 2px solid #2f60ff;
+  }
+  
+  .percentthree {
+      border: 2px solid #fff606;
+  }
+  
+  .percentfour {
+      border: 2px solid #2fff39;
+  }
+  
+  .percentfive {
+      border: 2px solid #0fcefd;
+  }
+  
+  .skills:hover {
+      transform: translateY(-15px);
+      box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 0px 40px 4px #2f60ff;
+  }
+  /*Percent border skills in hover*/
+  
+  .skills:hover .percentone {
+      box-shadow: 0px 0px 40px 4px #ff2f74;
+      transition-delay: 0.4s;
+  }
+  
+  .skills:hover .percenttwo {
+      box-shadow: 0px 0px 40px 4px #2f60ff;
+      transition-delay: 0.5s;
+  }
+  
+  .skills:hover .percentthree {
+      box-shadow: 0px 0px 40px 4px #fff606;
+      transition-delay: 0.6s;
+  }
+  
+  .skills:hover .percentfour {
+      box-shadow: 0px 0px 40px 4px #2fff39;
+      transition-delay: 0.7s;
+  }
+  
+  .skills:hover .percentfive {
+      box-shadow: 0px 0px 40px 4px #0fcefd;
+      transition-delay: 0.8s;
+  }
+  /*Percent progress skills in hover*/
+  
+  .skills:hover .progressone {
+      width: 75%;
+  }
+  
+  .skills:hover .progresstwo {
+      width: 63%;
+  }
+  
+  .skills:hover .progressthree {
+      width: 70%;
+  }
+  
+  .skills:hover .progressfour {
+      width: 40%;
+  }
+  
+  .skills:hover .progressfive {
+      width: 60%;
+  }
+  
+  .skills:hover .progressE {
+      width: 75%;
+  }
+  
+  .skills:hover .progressP {
+      width: 90%;
+  }
+  
+  .skills:hover .progressES {
+      width: 100%;
+  }
+  /*Container*/
+  
+  #main-comtainer {
+      position: absolute;
+  }
+  /*Phrase*/
+  
+  section .logo {
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 2em;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      padding: 30px 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10000;
+  }
+  
+  .logo {
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 2em;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+  }
+  /*Imagenes de fondo*/
+  
+  section img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+  }
+  
+  section {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      padding: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+  }
+  
+  section img#moon {
+      mix-blend-mode: screen;
+  }
+  /*Estilo para botones de Neon*/
+  
+  #main-comtainer a {
+      position: relative;
+      display: inline-block;
+      padding: 15px 30px;
+      color: #2196f3;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      text-decoration: none;
+      font-size: 24px;
+      overflow: hidden;
+      transition: 0.2s;
+      z-index: 10000;
+  }
+  
+  #main-comtainer a:hover {
+      color: #255784;
+      background: #2196f3;
+      box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+      transition-delay: 0.9s;
+  }
+  
+  #main-comtainer a span {
+      position: absolute;
+      display: block;
+  }
+  
+  #main-comtainer a span:nth-child(3) {
+      bottom: 0;
+      right: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(270deg, transparent, #2196f3);
+  }
+  
+  #main-comtainer a:hover span:nth-child(3) {
+      right: 100%;
+      transition: 1s;
+      transition-delay: 0.3s;
+  }
+  
+  #main-comtainer a span:nth-child(2) {
+      top: -100%;
+      right: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(180deg, transparent, #2196f3);
+  }
+  
+  #main-comtainer a:hover span:nth-child(2) {
+      top: 100%;
+      transition: 1s;
+      transition-delay: 0.3s;
+  }
+  
+  #main-comtainer a span:nth-child(4) {
+      bottom: -100%;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(360deg, transparent, #2196f3);
+  }
+  
+  #main-comtainer a:hover span:nth-child(4) {
+      bottom: 100%;
+      transition: 1s;
+      transition-delay: 0.55s;
+  }
+  /*My projects*/
+  
+  #myproject {
+      width: 50%;
+      position: relative;
+      height: 300px;
+  }
+  
+  #imagen {
+      width: 80vmax;
+      height: 40vmax;
+  }
+  
+  .botpj {
+      font-size: 30px;
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.5);
+      text-align: center;
+      font-weight: bold;
+      position: static;
+      color: #fff;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+  }
+  
+  .botpj:hover {
+      cursor: pointer;
+      transform: scale(1.5, 1.5);
+  }
+  
+  .back {
+      left: 2%;
+      top: calc(50% - 10px);
+  }
+  
+  .next {
+      right: 2%;
+      top: calc(50% - 10px);
+  }
+  
+  .box {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.8);
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+  }
+  
+  .box h2 {
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      text-align: center;
+  }
+  
+  .box .inputBox {
+      position: relative;
+  }
+  
+  .box .inputBox input {
+      width: 100%;
+      padding: 10px 0;
+      font-size: 16px;
+      color: #fff;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+      border: none;
+      border-bottom: 1px solid #fff;
+      outline: none;
+      background: transparent;
+  }
+  
+  .box .inputBox label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 10px 0;
+      font-size: 16px;
+      color: royalblue;
+      pointer-events: none;
+      transition: 0.4s;
+  }
+  
+  .box .inputBox input:focus~label,
+  .box .inputBox input:valid~label {
+      top: -18px;
+      left: 0;
+      color: #03a9f4;
+      font-size: 12px;
+  }
+  
+  .box input[type="submit"] {
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #fff;
+      background: #03a9f4;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+  }

@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.main-header {
+    height: 60px;
+}
+
+.main-footer {
+    min-height: 60px;
+}
+
+.root-main {
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 120px);
+}
+
+.root-main>.row {
+    justify-content: center;
+}

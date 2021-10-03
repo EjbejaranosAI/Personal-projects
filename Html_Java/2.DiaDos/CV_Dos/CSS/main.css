@@ -1,0 +1,44 @@
+.float-left{
+    float: left;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.flex-parent {
+    display: flex;
+}
+.flex-child {
+    flex: 1;
+}
+
+.inline-flex-parent {
+    display: inline-flex;
+}
+
+.grid-parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* BASE CSS */
+h3{
+    margin: 1.5rem 0 .25rem;
+    clear: both;
+}
+
+.parent{
+    background-color: aquamarine;
+    padding: 1rem;
+}
+
+.grid-parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr
+  }
+
+.child {
+    padding: 1rem;
+    border: 1px solid indigo;
+}

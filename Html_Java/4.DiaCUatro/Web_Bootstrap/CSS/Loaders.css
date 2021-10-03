@@ -1,0 +1,50 @@
+:root {
+    --diameter: 0.8em;
+    --diameter-margin: 0.5em;
+    --time: 0.7s;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #f2f2f2;
+    z-index: 10;
+    transition: all 1s ease;
+}
+
+.loader {
+    width: var(--diameter);
+    height: var(--diameter);
+    border-radius: 50%;
+}
+
+.one {
+    background-color: #777;
+    margin-right: var(--diameter-margin);
+    animation: ball-one var(--time) linear infinite;
+}
+
+.two {
+    background-color: #333;
+    animation: ball-two var(--time) linear infinite;
+}
+
+@keyframes ball-one {
+    50% {
+        transform: translateX(calc(var(--diameter) + var(--diameter-margin)));
+    }
+}
+
+@keyframes ball-two {
+    50% {
+        transform: translateX( calc(0px - (var(--diameter) + var(--diameter-margin))));
+    }
+}

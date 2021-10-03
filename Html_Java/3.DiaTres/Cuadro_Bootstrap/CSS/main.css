@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.grid-container {
+    margin: 20px;
+    background-color: black;
+    text-align: center;
+    font-size: large
+}
+
+.BlancoDiv {
+    background-color: whitesmoke;
+}
+
+.RojoDiv {
+    background-color: brown;
+}
+
+.BlauDiv {
+    background-color: darkblue;
+}
+
+.GrocDiv {
+    background-color: yellow;
+}
+
+.grid-child {
+    grid-column: span 3;
+    margin: 20px;
+    min-height: 200px;
+    background-color: brown;
+    text-align: center;
+    font-size: large
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 100px 200px;
+}
+
+.BorderColor {
+    border: 5px solid black;
+}
+
+.Lienzo {
+    height: 500px;
+    width: 500px;
+}

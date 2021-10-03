@@ -1,0 +1,70 @@
+:root {
+  --svg-width-height: 25px;
+  --white-color: #f2f2f2;
+  --black-color: #0d0d0d;
+  --grey-color: #0d0d0dd9;
+  --grey-color-hover: #0d0d0df4;
+  --border-radius: 0.5em;
+}
+
+.navbar {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  text-align: right;
+  z-index: 30;
+  transition: transform 500ms ease;
+  transform-origin: bottom right;
+}
+
+.navbar > span {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  visibility: hidden;
+  pointer-events: none;
+  transform: scaleY(0);
+  transition: all 200ms ease-out;
+  transform-origin: bottom;
+  background-color: var(--grey-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.navbar > span > a {
+  text-decoration: none;
+  padding: 0.5em 2em;
+  color: var(--white-color);
+}
+
+.navbar > span > a:hover {
+  background-color: var(--grey-color-hover);
+}
+
+.show-menu {
+  display: inline-flex;
+  padding: 0.5em;
+  border-radius: 50%;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  cursor: pointer;
+  box-shadow: 2px 1px 6px 1px rgb(84, 84, 84);
+  margin-top: var(--border-radius);
+}
+
+.show-menu > svg {
+  width: var(--svg-width-height);
+  height: var(--svg-width-height);
+  transition: all 200ms ease-out;
+}
+
+.spin-menu {
+  transform: rotate(135deg);
+}
+
+.navbar > .menu-visible {
+  visibility: visible;
+  transform: scaleY(1);
+  pointer-events: all;
+}
+

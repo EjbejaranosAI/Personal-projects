@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/NavBar.css" />
+    <link rel="stylesheet" href="./CSS/Header.css" />
+    <!-- <link rel="stylesheet" href="./CSS/Loaders.css" />-->
+    <link rel="stylesheet" href="./CSS/Formulario.css" />
+
+    <!-- Link relativos de icono pestaña  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="shortcut icon" href="atom.png">
+
+
+    <title>Bootstrap Web</title>
+    <link rel="shortcut icon" href="rocket.png">
+</head>
+
+<body>
+
+    <!-- loader -->
+    <div id="loading" class="loader-container">
+        <span class="loader one"></span>
+        <span class="loader two"></span>
+    </div>
+
+    <!-- Cubierta realizada con video de cueva y minimalista -->
+    <header class="cover" id="cover">
+        <video class="video" src="Cave .mp4" loop autoplay muted></video>
+        <h1>Bootstrap <i class="fas fa-space-shuttle icon-rotation"></i> </h1>
+        <p>We create the website of your dreams </p>
+        <span class="scrollDown">
+
+    <a href="#contact-me">
+      <svg
+        width="100"
+        height="50"
+        viewBox="0 0 100 50"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g id="Group 1">
+          <path
+            fill="currentColor"
+            id="lineas (Stroke)"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M18.6145 1.68161C18.7903 1.46869 19.1055 1.43864 19.3184 1.61448L50.4769 27.3474L80.6757 1.6194C80.8859 1.44032 81.2015 1.46554 81.3806 1.67574C81.5597 1.88595 81.5345 2.20152 81.3243 2.3806L50.8061 28.3806C50.6215 28.5379 50.3505 28.54 50.1635 28.3855L18.6816 2.38552C18.4687 2.20968 18.4386 1.89453 18.6145 1.68161Z"
+            fill="black"
+          />
+          <path
+            fill="currentColor"
+            id="lineas (Stroke)_2"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M18.6145 11.6816C18.7903 11.4687 19.1055 11.4386 19.3184 11.6145L50.4769 37.3474L80.6757 11.6194C80.8859 11.4403 81.2015 11.4655 81.3806 11.6757C81.5597 11.8859 81.5345 12.2015 81.3243 12.3806L50.8061 38.3806C50.6215 38.5379 50.3505 38.54 50.1635 38.3855L18.6816 12.3855C18.4687 12.2097 18.4386 11.8945 18.6145 11.6816Z"
+            fill="black"
+          />
+          <path
+            fill="currentColor"
+            id="lineas (Stroke)_3"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M18.6145 21.6816C18.7903 21.4687 19.1055 21.4386 19.3184 21.6145L50.4769 47.3474L80.6757 21.6194C80.8859 21.4403 81.2015 21.4655 81.3806 21.6757C81.5597 21.8859 81.5345 22.2015 81.3243 22.3806L50.8061 48.3806C50.6215 48.5379 50.3505 48.54 50.1635 48.3855L18.6816 22.3855C18.4687 22.2097 18.4386 21.8945 18.6145 21.6816Z"
+            fill="black"
+          />
+        </g>
+      </svg>
+    </a>
+  </span>
+    </header>
+
+
+
+
+
+
+    <!-- Creo mi NAVBAR-->
+    <nav id="show-nav" class="navbar">
+        <span id="span">
+    <a href="#Home"><i class="fas fa-user-astronaut"></i> Home</a>    
+    <a href="#Home"> <i class="fas fa-dragon"></i> </a> 
+    <a href="#Home">Home</a> 
+    <a href="#Home">Home</a>     
+    </span>
+
+        <div class="show-menu">
+            <svg class="menu-icon" height="32" viewBox="0 0 426.66667 426.66667" width="32" xmlns="http://www.w3.org/2000/svg">
+      <path
+        fill="currentcolor"
+        d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0"
+      />
+    </svg>
+        </div>
+    </nav>
+
+
+    <!-- Mostramos Links e información de contacto-->
+    <div class="contact-me" id="contact-me">
+        <div class="animation" id="animation">
+            <div>
+                <h2><i class="fas fa-feather-alt"></i> Let me tell you something about us</h2>
+                <p>
+                    Created to simplify your life, we are minimalist and we offer you several possibilities for your business to travel through the internet and connect with millions of people through our great interface.
+                </p>
+            </div>
+        </div>
+        <div class="contact-me-footer" id="contact-me-footer">
+            <h2><i class="fas fa-envelope-open-text"></i> Contact with us: Ejbejaranos@gmail.com</h2>
+            <section>
+                <h2>
+                    <li>
+                        <i class="fab fa-github-square"></i> https://github.com/Ejbejaranos</li>
+
+                    <li><i class="fas fa-mobile-alt"></i> Mobile: (+34)648578474</li>
+                </h2>
+
+            </section>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ad7da18a1e.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

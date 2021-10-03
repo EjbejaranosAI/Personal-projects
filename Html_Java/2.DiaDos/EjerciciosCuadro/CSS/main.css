@@ -1,0 +1,65 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+div#general{
+    margin: auto;
+    width: 800px;
+    height: 800px;
+    background-color:black;
+}
+
+div#Cuadro1{
+    margin-left: 20;
+    margin-top: 20;
+    float: right;
+    width: 530px;
+    height: 530px;
+    background-color:brown;
+}
+
+div#Cuadro2{
+    float: left;
+    position: relative;
+    width: 230px;
+    height: 255px;
+    background-color:whitesmoke;
+
+
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+div#Cuadro3{
+    margin-top: 20px;
+    position: relative;
+    bottom: -275px;
+    width: 230px;
+    height: 255px;
+    background-color:whitesmoke;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+div#Cuadro4{
+    position: relative;
+    bottom: -275px;
+    width: 230px;
+    height: 230px;
+    background-color:blue;
+
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+div#Cuadro5{
+    float: center;
+    position: relative;
+    bottom: -295px;
+    
+    width: 230px;
+    height: 230px;
+}

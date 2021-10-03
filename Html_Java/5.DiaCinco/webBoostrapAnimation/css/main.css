@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'opens sans';
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    background-image: url(SPACEX.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.body ::before {
+    content: "";
+    width: 100%;
+    min-width: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #2B2E56, #BBBFF7);
+    opacity: 0.8;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.Items {
+    background-color: silver transparent;
+    align-items: center;
+    border-radius: 0 0 16px 16px;
+    text-align: center;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+.fondoCuadros {
+    background: grey;
+    opacity: 0.45;
+    z-index: -1;
+}
+
+.ViewPort {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: whitesmoke;
+    font-family: 'Open Sans';
+}
+
+.Box {
+    width: 208px;
+    height: 150px;
+    text-align: center;
+    margin: auto;
+}
+
+.Cuadros {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.Botones {
+    background: grey;
+    opacity: 0.45;
+    z-index: -1;
+    border-radius: 90px 90px 60px 60px;
+}
+
+.BotonLetra {
+    color: rgb(255, 255, 255);
+    z-index: 0;
+}
+
+.AlturaVideo {
+    min-width: 235px;
+    height: 100px;
+}

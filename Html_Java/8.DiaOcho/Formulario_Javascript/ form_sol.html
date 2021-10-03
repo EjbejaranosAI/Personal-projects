@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="./form_sol.css">
+    <script src="./form_sol.js"></script>
+    <title>Form JS</title>
+</head>
+
+<body>
+    <header class="main-header navbar navbar-light bg-primary shadow">
+        <nav class="container-fluid">
+            <a class="navbar-brand text-light" href="#">Navbar</a>
+        </nav>
+    </header>
+
+    <main class="root-main row px-0 mx-0">
+        <div id="sections-wrapper" class="row col-xs-12 mx-0">
+            <section class="col-xs-8 col-md-6 col-lg-4 h-50 p-2">
+                <form id="form-signin" name="signinForm" class="w-100 h-100 px-2 py-3 border border-1 border-dark shadow">
+                    <div class="row m-0 h-100 d-flex align-content-around">
+                        <h1 class="text-center"> Signin </h1>
+
+                        <section class="col-xs-12 col-md-6 py-3">
+                            <label for="signin-username">Username: </label>
+                            <input type="text" placeholder="Anakin" class="form-control" id="signin-username" name="signin-username">
+                        </section>
+                        <section class="col-xs-12 col-md-6 py-3">
+                            <label for="signin-password">Password: </label>
+                            <input type="password" placeholder="********" class="form-control" id="signin-password" name="signin-password">
+                        </section>
+
+                        <section class="col-12 py-3">
+                            <label for="signin-password">Description: </label>
+                            <textarea placeholder="Soy estudiante ..." class="form-control" id="signin-password" name="signin-password"></textarea>
+                        </section>
+
+                        <button type="submit" class="btn btn-block btn-primary" role="button"> Signin </button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer navbar navbar-light bg-primary shadow">
+        <nav class="container-fluid row m-0 justify-content-center">
+            <a href="#" class="text-light text-center">
+                <i class="fab fa-facebook-square fa-2x"></i>
+            </a>
+        </nav>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+
+</html>

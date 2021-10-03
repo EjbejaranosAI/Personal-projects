@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBEDISON </title>
+
+    <link rel="stylesheet" href="./index.html">
+    <link rel="stylesheet" href="./CSS/timeline.css">
+    <link rel="stylesheet " type="text/css " href="./CSS/about.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="# " class="logo">About Edison</a>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#" class="active">About</a></li>
+            <li><a href="./index.html#work">Work</a></li>
+            <li><a href="./index.html#contactme">Contact</a></li>
+
+        </ul>
+    </header>
+
+    <section>
+
+
+        <img src="./IMG/stars.png" id="stars">
+        <img src="./IMG/moon.png" id="moon">
+        <img src="./IMG/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Welcome I'm Edison</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="./IMG/mountains_front.png" id="mountains_front">
+
+    </section>
+
+    <div class="sec" id="sec">
+        <h2>I am a tech lover </h2>
+        <p>I am an Aeronautical Engineer, with more than two years of experience in the administration and development of information systems. Passionate about programming and technology, with great ability to connect ideas in different lines of knowledge
+            to apply them to new areas. I have taken some courses on machine learning, operating systems, computer architecture and interaction and interface design <br> <br> I am currently beginning a master's degree in artificial intelligence at the
+            UPC, I also continue working remotely for a Latin American company.</p>
+
+
+
+
+    </div>
+
+    <div class="container">
+        <div class="timeline">
+            <ul>
+                <li>
+                    <div class="timeline-content">
+                        <h3 class="date">1993</h3>
+                        <h1>I born in Colombia</h1>
+                        <p>I was born in a city called Pereira then I moved to Bogotà to do my high school studies. <img src="./IMG/pereira.jpg"></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <h3 class="date">2010</h3>
+                        <h1>I was a military man for a short time</h1>
+                        <p>When I was 16 years old, I joined the army from there I left 5 years later and I was already a non-commissioned officer, in all those years I traveled, worked and got to know a large part of Colombia. <img src="./IMG/MILI.jpeg"
+                                width="80%" height="80%"></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <h3 class="date">2015-2018</h3>
+                        <h1>University of sao paulo - Brasil</h1>
+                        <h1>Los Libertadores University Foundation - Colombia</h1>
+                        <p>JI entered the university thanks to a scholarship that I got and managed to do an exchange in Brazil.</p>
+                        <img src="./IMG/USP.jpeg" width="100%" height="100%">
+                        <img src="./IMG/RIO.jpeg" width="100%" height="100%">
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <h3 class="date">2021</h3>
+                        <h1>Europa</h1>
+                        <p>Now I am starting my master's degree in computer science and although I am an aeronautical engineer, I want to get to participate in projects that use both branches.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <h3 class="date">2021</h3>
+                        <h1>My pissed off cat</h1>
+                        <p>
+                            Finally this is my cat pissed off every time that I don't put his videos on YouTube.<img src="./IMG/melCabreao.jpg" width="70%" height="100%"> </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+    </div>
+
+
+
+
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+
+
+        })
+    </script>
+
+
+
+</body>
+
+</html>

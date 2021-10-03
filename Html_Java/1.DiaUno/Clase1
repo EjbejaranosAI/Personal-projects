@@ -1,0 +1,132 @@
+HTML 		: Escribe la estructura de la pagina web
+css		: Comportamiento de los elementos
+Javascript	: 
+
+
+HTML
+
+Es un lenguaje basado en etiquetas, representa elementos que pueden contener, texto, parrafos, una interfaz de encabezado.
+
+Los elementos se construyen usando tags <>, como sabemos que HTML nos sirve para organizar la estructura, utilizaremos unos elementos para aorganizar nuestra pagina web.
+
+------------------------------------------------
+HTML -TAGS
+
+<html> para abrir
+</html> para cerrar
+<html> , <body> 
+
+cada etiqueta es un elemento de la web
+
+Ejemplo 1
+/////////////////////////////
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>This is a webpage</title>
+	</head>
+	
+	<body>
+		<hl> Big heading! </hl>
+		<hr>
+		<p>
+		
+/////////////////////////////////
+
+Html5 es una nueva version que trajo como novedades la inclusion en la estructura de nuevos tipos encabezados, 
+
+<div><table> : es un contenedor que nos permite utilizar y crear tablas.
+
+HEADINGS -> Son los encabezados <h1> el mas pequeño y <h6> la mas grande.
+
+TEXT
+<p>,<span>
+<b>,<u>,<i>,<strong>,<em>
+<ins> and <del>
+HTML:<cite><acronym>
+<abbr>,<blockquote>
+
+MEDIA
+<img/>,<audio>,<video>
+
+LINKS
+
+<a> : Nos permite abrir links a otras webs o a otros ficheros que tengamos.
+
+METADATA TAGS - se utiliza para configurar el viewport
+
+<meta> 		:configura el viewport, charset
+
+<link> importa ficheros css
+
+<base> 		:define la URL base o path, para que los elementos que tengan que buscar imagenes o datos la busquen en la ruta relativa.
+
+<title> </title> 	:Define el texto en el buscador
+
+<script> </script> 	:Define como usa el cliente el javascript
+
+HTML - ATTRIBUTES
+
+- Provee informacion adicional y especifica de cada uno de los tags
+
+Los atributos solo se añaden en la etiqueta de apertura.
+
+<tag name="valor"></tag>		
+
+href = "about.html"
+colspan = 2
+
+Usamos el espacio para separa multiples atributos
+
+<div id = "first" class="maps" style = "color:red"></div> NO USAR ESTE STYLE DE ESTA MANERA
+
+
+Ejemplo 2
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+Un <div> se utiliza para dividir o estructuras el contenido
+
+Un <form> nos permite colocar nuestros imputs
+
+Table nos permite crear filas, columnas, en resumen tablas	
+
+HTML - FORMS - COMMON INPUTS
+these are tthe most common inputs to use
+
+-Texto
+-Pasword
+-email
+-number
+-Date --->type date- type date local
+- textarea : Añadir una descripción, con row y cols se observa que tan alto y ancho puede ser.		
+
+Fieldset : nos permite agrupar un formulario, con "Legend", escribimos el titulo en medio de linea.
+
+SELECT & Optgroup : crea un dropdown con las opciones que 
+elegimos ingresar.
+
+HTML Canvas
+
+Se crea un lienzo para crear animaciones, juegos, con Javascript.
+
+HTML MEDIA
+
+nos sirve para añadir audio desde directorios locales. Nos crea un reproductor el cual se maneja como si fuera un booleano. 
+
+
+HTML Iframes
+
+Podemos insertar otra paina web dentro de la que se llama, se utiliza normalmente para colocar videos de youtube.
+
+
+HTML - APIs
+-Geolocation
+- Drag abd Drop Arrastrar ficheros y soltar en algun lugar
+- Local Storage : Base de datos en navegador
+- Aplication Cache :
+- Web Workers :
+- SSE :

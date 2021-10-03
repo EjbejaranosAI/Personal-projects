@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f2f2f2;
+    flex-direction: column;
+    width: 100%;
+}
+
+.animation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+@keyframes showAnimation {
+    from {
+        transform: translate(0, 100px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+.animation>div {
+    max-width: 70%;
+    width: 100%;
+}
+
+.animation>div>h2,
+.animation>div>p {
+    line-height: 35px;
+}
+
+.animation>div>h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.animation>div>p {
+    font-size: 20px;
+}
+
+.about-me-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 10vh;
+}
+
+.about-me-footer>section {
+    list-style: none;
+    display: flex;
+}
+
+.about-me-footer>section>li {
+    margin: 0 25px;
+}
+
+@media screen and (max-width: 800px) {
+    .animation {
+        width: 85%;
+    }
+    .animation>div {
+        max-width: 100%;
+    }
+    .animation>div>h2 {
+        font-size: 30px;
+    }
+    @media screen and (max-width: 500px) {
+        .about-me-footer {
+            display: none;
+        }
+    }
+}
